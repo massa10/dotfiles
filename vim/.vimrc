@@ -10,18 +10,18 @@ syntax on
 filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""
 " VPlug plugins
-call plug#begin('~/.vim/plugged')
+" call plug#begin('~/.vim/plugged')
 
-Plug 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'
 
-Plug 'tpope/vim-surround'
+" Plug 'tpope/vim-surround'
 
-Plug 'scrooloose/nerdcommenter'
-let g:NERDSpaceDelims = 1 " 1 space after comment symbol
+" Plug 'scrooloose/nerdcommenter'
+" let g:NERDSpaceDelims = 1 " 1 space after comment symbol
 
 
 
-call plug#end()
+" call plug#end()
 " End VPlug
 """"""""""""""""""""""""""""""""""""""
 
@@ -124,6 +124,6 @@ map <silent> <leader><cr> :noh<cr>
  set statusline+=\ Buf:%n                    " Buffer number
  set statusline+=\ [%b][0x%B]\               " ASCII and byte code under cursor
 
-python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
+" python3 from powerline.vim import setup as powerline_setup
+" python3 powerline_setup()
+" python3 del powerline_setup
