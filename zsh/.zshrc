@@ -1,18 +1,19 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/massa/.oh-my-zsh
+  export ZSH=$HOME/.oh-my-zsh
 
 # Python virtuaenvwrapper variables
-  export WORKON_HOME=$HOME/.virtualenvs
-  export PROJECT_HOME=$HOME/Devel
-  source /usr/bin/virtualenvwrapper.sh  
+#  export WORKON_HOME=$HOME/.virtualenvs
+#  export PROJECT_HOME=$HOME/Devel
+#  source /usr/bin/virtualenvwrapper.sh  
 
 # Varible for makepkg
   export VISUAL=vim
 
 # Variable for Android (React)
-  export ANDROID_HOME=$HOME/.android/Sdk
+#  export ANDROID_HOME=$HOME/.android/Sdk
 # Veriable for Go
-  export GOPATH=$HOME/go
+#  export GOPATH=$HOME/go
+ 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -66,10 +67,10 @@ plugins=(git zsh-syntax-highlighting)
 
 # User configuration
 
-  export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/massa/.local/bin:/home/massa/bin"
-  export PATH=$PATH:$ANDROID_HOME/tools
-  export PATH=$PATH:$ANDROID_HOME/platform-tools
-  export PATH=$PATH:$HOME/go/bin
+#  export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/massa/.local/bin:/home/massa/bin"
+#  export PATH=$PATH:$ANDROID_HOME/tools
+#  export PATH=$PATH:$ANDROID_HOME/platform-tools
+#  export PATH=$PATH:$HOME/go/bin
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -104,12 +105,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias pi="sudo pacman -S --needed"
-alias prm="sudo pacman -R"
-alias pai="trizen -S"
+# alias pi="sudo pacman -S --needed"
+# alias prm="sudo pacman -R"
+# alias pai="trizen -S"
 alias gits="git status"
 alias gitc="git commit -m"
 alias gita="git add -A"
 alias lsa="ls -altrh"
 alias c="clear"
-alias ctf="workon ctf"
+# alias ctf="workon ctf"
