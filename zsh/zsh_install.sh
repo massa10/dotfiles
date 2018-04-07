@@ -29,4 +29,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-mv manto.zsh-theme ~/.oh-my-zsh/themes/
+cp manto.zsh-theme ~/.oh-my-zsh/themes/
+
+mv ~/.zshrc ~/.zshrc.bkk
+
+cp .zshrc ~/.zshrc
