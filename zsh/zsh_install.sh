@@ -19,18 +19,18 @@ then
     INSTALL="sudo yum install -y"
 fi
 
-echo Installing zsh
+echo Installing requirements: zsh curl git
 
 $INSTALL zsh curl git
 
 echo Installing oh-my-zsh
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sed '/env zsh/d')"
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 cp manto.zsh-theme ~/.oh-my-zsh/themes/
 
-mv ~/.zshrc ~/.zshrc.bkk
+mv ~/.zshrc ~/.zshrc.before-massa10
 
 cp .zshrc ~/.zshrc
