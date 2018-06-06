@@ -31,6 +31,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 cp manto.zsh-theme ~/.oh-my-zsh/themes/
 
-mv ~/.zshrc ~/.zshrc.before-massa10
+if [ $(ls ~/.zshrc 2> /dev/null) ]
+then
+    mv ~/.zshrc ~/.zshrc.before-massa10
+fi
 
-cp .zshrc ~/.zshrc
+cp $DIR/.zshrc ~/.zshrc

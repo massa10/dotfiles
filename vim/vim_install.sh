@@ -2,6 +2,9 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-mv ~/.vimrc ~/.vimrc.bkk
+if [ $(ls ~/.vimrc 2> /dev/null) ]
+then
+    mv ~/.vimrc ~/.vimrc.pre-massa10
+fi
 
-cp .vimrc ~/.vimrc
+cp $DIR/.vimrc ~/.vimrc
