@@ -85,6 +85,10 @@ set showcmd
 " Save with lead+w
 nmap <leader>w :w!<cr> 
 
+" Toggle row num with lead+n
+:nmap <leader>n :set invnumber<CR>
+
+
 " sudo save with :W
 command W w !sudo tee % > /dev/null
 
