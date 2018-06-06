@@ -1,2 +1,2 @@
-# linux_conf
-Linux personalizations
+# Dotfiles
+Personal configuration for linux tools
