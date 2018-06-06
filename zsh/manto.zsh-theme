@@ -14,16 +14,16 @@
     }
      
     function get_RAM() {
-      free -m | awk '{if (NR==3) print $4}' | xargs -i echo 'scale=1;{}/1000' | bc
+      free -m | awk '{if (NR==2) print $4}' | xargs -i echo 'scale=1;{}/1000' | bc
       }
      
     #function get_batt() {
     #  cat /sys/class/power_supply/BAT0/capacity
     #  }
     # $(get_batt)%% %{$reset_color%}' aggiugere sotto 
-     
+    
     function get_load() {
-      uptime | awk '{print $11}' | rev | cut -c 2- | rev
+      uptime | rev |  awk '{print $3}' | cut -c 2- | rev
       }
      
     PROMPT='%{$fg_bold[green]%}%n@%m%{$reset_color%} %{$fg_bold[blue]%}%2~%{$reset_color%} $(my_git_prompt_info)%{$reset_color%}%B»%b '
