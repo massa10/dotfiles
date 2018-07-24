@@ -29,7 +29,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-cp manto.zsh-theme ~/.oh-my-zsh/themes/
+cp $DIR/manto.zsh-theme ~/.oh-my-zsh/themes/
 
 if [ $(ls ~/.zshrc 2> /dev/null) ]
 then
