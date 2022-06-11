@@ -4,7 +4,9 @@
 # Python virtuaenvwrapper variables
 #  export WORKON_HOME=$HOME/.virtualenvs
 #  export PROJECT_HOME=$HOME/Devel
-#  source /usr/bin/virtualenvwrapper.sh  
+# One source option:
+#  source /usr/bin/virtualenvwrapper.sh
+#  source /usr/bin/virtualenvwrapper_lazy.sh   
 
 # Varible for makepkg
   export VISUAL=vim
@@ -12,13 +14,13 @@
 # Variable for Android (React)
 #  export ANDROID_HOME=$HOME/.android/Sdk
 # Veriable for Go
-#  export GOPATH=$HOME/go
+  export GOPATH=$HOME/go
  
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="manto"
+  ZSH_THEME="ys"
 
 
 # Uncomment the following line to use case-sensitive completion.
@@ -63,7 +65,8 @@ ZSH_THEME="manto"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting)
+# plugins=(git zsh-autosuggestions zsh-syntax-highlighting colorize colored-man-pages encode64 extract safe-paste sudo)
+  plugins=(git zsh-syntax-highlighting)
 
 # User configuration
 
@@ -86,7 +89,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+  # export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -107,7 +110,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # alias pi="sudo pacman -S --needed"
 # alias prm="sudo pacman -R"
-# alias pai="trizen -S"
 alias gits="git status"
 alias gitc="git commit -m"
 alias gita="git add -A"

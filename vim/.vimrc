@@ -95,6 +95,14 @@ command W w !sudo tee % > /dev/null
 " Remove search highligh
 map <silent> <leader><cr> :noh<cr>
 
+" Should fix vim paste while on tmux according to https://vi.stackexchange.com/questions/23110/pasting-text-on-vim-inside-tmux-breaks-indentation
+"if &term =~ "screen"                                                   
+"    let &t_BE = "\e[?2004h"                                              
+"    let &t_BD = "\e[?2004l"                                              
+"    exec "set t_PS=\e[200~"                                              
+"    exec "set t_PE=\e[201~"                                              
+"endif
+
 """ STATUS BAR
  set laststatus=2
  function! InsertStatuslineColor(mode)
